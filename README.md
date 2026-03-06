@@ -65,9 +65,8 @@ $ cd shadow
 本项目采用 MIT 许可证 - 查看 [LICENSE](LICENSE) 文件了解详情
 
 ## 贡献者
-<a href="https://github.com/shadowxhero/shadow/graphs/contributors">
-    <img src="https://contrib.rocks/image?repo=shadowxhero/shadow" />
-</a>
+
+感谢所有为本项目做出贡献的开发者！查看完整的贡献者列表，请访问 [GitHub贡献者页面](https://github.com/shadowxhero/shadow/graphs/contributors)。
 
 ---
 
