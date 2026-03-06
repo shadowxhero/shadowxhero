@@ -1,7 +1,5 @@
 # Shadow Scripts
 
-
-
 ## Install
 
 使用油猴脚本需要首先安装`GreaseMonkey/TamperMonkey`扩展，版本库中有如下脚本，可以直接点击安装按钮进行安装。
