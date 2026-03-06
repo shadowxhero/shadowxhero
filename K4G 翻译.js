@@ -27,6 +27,7 @@
   }
 
   const defaultDict = {
+    // ==================== 1. 导航与界面 ====================
     // 通用导航
     'Search': '搜索',
     'Dashboard': '仪表盘',
@@ -43,33 +44,8 @@
     'Logout': '退出登录',
     'Current balance': '当前余额',
     'Current position': '当前排名',
-
-    // Merchant & Offers
-    'Merchant': '商家',
-    'MY OFFERS': '我的报价',
-    'Add offer': '新增报价',
-    'Sold offers': '已售报价',
-    'Apply global dynamic pricing': '应用全局动态定价',
-    'Show Filters': '显示筛选',
-    'Hide Filters': '隐藏筛选',
-    'Active': '启用中',
-    'Denied': '已拒绝',
-    'Offers for export (max. 5000)': '待导出报价（最多5000）',
-    'Export': '导出',
-    'Title': '标题',
-    'Sold': '已售',
-    'Active to': '有效期至',
-    'Days left': '剩余天数',
-    'Price': '价格',
-    'Position': '排名',
-    'Apply dynamic pricing for offers:': '应用动态定价到报价：',
-    'Boost offer': '提升报价',
-    'View Stock': '查看库存',
-    'Preview': '预览',
-    'Deactivate': '停用',
-    'Go to next step': '下一步',
-
-    // 面板
+    
+    // 面板/仪表板
     'Overview': '概览',
     '+ New Offer': '+ 新建报价',
     'New Offer': '新建报价',
@@ -89,14 +65,39 @@
     'Become an Affiliate': '成为联盟伙伴',
     'Earn with us': '与我们一起赚钱',
 
-    // 其他常见
+    // ==================== 2. 商家与报价管理 ====================
+    // 商家相关
+    'Merchant': '商家',
+    'MY OFFERS': '我的报价',
+    
+    // 报价操作
+    'Add offer': '新增报价',
+    'Sold offers': '已售报价',
     'Edit': '编辑',
     'Edit Offer': '编辑报价',
     'Promote offer': '推广报价',
-    'Fragments': '碎片',
-    'Rewards': '奖励',
-
-    // New Offer 页常见词
+    'Boost offer': '提升报价',
+    'View Stock': '查看库存',
+    'Preview': '预览',
+    'Deactivate': '停用',
+    'Go to next step': '下一步',
+    
+    // 报价状态
+    'Active': '启用中',
+    'Denied': '已拒绝',
+    'Sold': '已售',
+    'Active to': '有效期至',
+    'Days left': '剩余天数',
+    'Position': '排名',
+    'Title': '标题',
+    
+    // 报价筛选与导出
+    'Show Filters': '显示筛选',
+    'Hide Filters': '隐藏筛选',
+    'Offers for export (max. 5000)': '待导出报价（最多5000）',
+    'Export': '导出',
+    
+    // 新建报价页面
     'MERCHANT': '商家',
     'NEW OFFER': '新建报价',
     'INSTANT DELIVERY': '即时发货',
@@ -105,7 +106,6 @@
     'Visit Product Page': '访问商品页面',
     'Change Product': '更换商品',
     'Enter product name': '输入商品名称',
-
     'PLATFORM': '平台',
     'REGION': '地区',
     'KEY': '密钥类型',
@@ -121,8 +121,8 @@
     'Instant Delivery': '即时发货',
     'Choose option': '选择选项',
     'Hide my offers': '隐藏我的报价',
-
-    // 库存/上传
+    
+    // 库存管理
     'Stock Details': '库存详情',
     'Files .csv/.txt': '文件 .csv/.txt',
     'Manual': '手动',
@@ -133,8 +133,8 @@
     'Stock': '库存',
     'Pending': '待处理',
     'No offers': '暂无报价',
-
-    // 价格
+    
+    // 价格管理
     'Price Details': '价格详情',
     'I want to receive': '我希望到账',
     'Customer price': '客户价格',
@@ -144,7 +144,9 @@
     'Dynamic pricing': '动态定价',
     'Allow manual pricing': '允许人工调价',
     'My minimum price': '我的最低价格',
-
+    'Apply global dynamic pricing': '应用全局动态定价',
+    'Apply dynamic pricing for offers:': '应用动态定价到报价：',
+    
     // 报价详情
     'Offer Details': '报价详情',
     'Sale duration': '销售时长',
@@ -153,53 +155,30 @@
     '365 days': '365天',
     'Automatically reactivate when expired': '过期后自动重新上架',
 
-    // 底部文案
-    'By creating this offer you agree to': '创建该报价即表示你同意',
-    'Add and create another offer': '添加并创建另一个报价',
-    'Add my Offer': '添加我的报价',
+    // ==================== 3. 账户与设置 ====================
+    'Fragments': '碎片',
+    'Rewards': '奖励',
 
-    // 提示文案（分段）
-    'If you have more products to add at once, please contact our': '如果你有更多商品需要一次性添加，请联系',
-    'Suppliers Team': '供应商团队',
-
-    // 长句
-    'This is the exact amount that will be transferred to you after all platform fees have been deducted. (customer price minus platform fees and services). Note that if there are VAT rates applied on your account, this amount will change according to the VAT table in use:':
-      '这是在扣除所有平台费用后将实际转给你的金额（客户价格减去平台费用和服务费）。请注意，如果你的账户适用了增值税税率，该金额会根据当前使用的增值税表发生变化：',
-    'This amount represents your gross sales price to end customers before platform fees are deducted.':
-      '该金额表示在扣除平台费用之前，你面向终端客户的含税销售价格。',
-    'Note that if there are VAT rates applied on your account, this sales price will change according to the VAT table in use:':
-      '请注意，如果你的账户适用了增值税税率，该销售价格会根据当前使用的增值税表发生变化：',
-    'The sales price for the end customers also depends on additional services that the customer may choose during the purchase.':
-      '终端客户的销售价格也会受到客户在购买时选择的附加服务影响。',
-    'A complete list of gross sales prices can be found in the monthly sales report.':
-      '完整的含税销售价格列表可在每月销售报表中查看。',
-    'Set your Minimum Price (Customer price) for which you are willing to sell the key.':
-      '设置你愿意出售该 Key 的最低价格（客户价）。',
-    "Turn on the 'Decreasing Price Automatically' to keep your offer on the 1 position as long as possible.":
-      '开启“自动降价”可让你的报价尽可能长时间保持在第1位。',
-    "Turn on the 'Decreasing Price Automatically' to keep your offer on the 1 position for as long as possible.":
-      '开启“自动降价”可让你的报价尽可能长时间保持在第1位。',
-    "Turn on the 'Allow manual pricing' to have our Team track and adjust the price dynamically to maximize your sales, revenue and profit based on other markets.":
-      '开启“允许人工定价”后，我们的团队将根据其他市场动态跟踪并调整价格，以最大化你的销量、营收和利润。',
-    'This option allows us to manually adjust the price of your offer, above the set Minimal Price.':
-      '此选项允许我们在你设定的最低价格之上，手动调整你的报价价格。',
-    'Our Team will raise or lower the price to optimize your revenue and profit based on the market conditions.':
-      '我们的团队会根据市场情况上调或下调价格，以优化你的营收和利润。',
-    'Especially important for new releases and bestsellers.':
-      '这对新品和畅销商品尤为重要。',
-    'If you want to add new keys into your stock, please go to': '如果你想向库存添加新的密钥，请前往',
-    'Preferable key format: Login: XXXX  Password: XXXXX, Email Login: XXXX Email Password: XXXX, Domain: XXXX':
-    '建议密钥格式：登录账号：XXXX  登录密码：XXXXX，邮箱账号：XXXX 邮箱密码：XXXX，域名：XXXX',
-    'minimalPrice - This value should be less than or equal to': '最低价格 - 该值应小于或等于',
-    
-    // Livechat / Supplier Services / Overview / Tickets
+    // ==================== 4. 客服与支持 ====================
+    // 客服相关
     'LiveChat availability': '在线客服可用性',
     'Dear Partner,': '尊敬的合作伙伴：',
     'To establish a quick and direct communication with our Suppliers Team, please add us on Microsoft Teams at':
       '为了与我们的供应商团队建立快速直接的沟通，请在 Microsoft Teams 添加我们：',
     'Contact e-mail for wholesale inquiries:': '批发咨询邮箱：',
     'Thank you for your continued partnership!': '感谢您一直以来的合作！',
+    
+    // 工单管理
+    'Create Ticket': '创建工单',
+    'All': '全部',
+    'Ongoing': '进行中',
+    'Open': '待处理',
+    'Closed': '已关闭',
+    'Solved': '已解决',
+    'On Hold': '挂起',
+    'No tickets found': '未找到工单',
 
+    // ==================== 5. 营销与推广 ====================
     'Offer exposure': '报价曝光',
     'Sales insights': '销售洞察',
     'Additional Services': '附加服务',
@@ -254,14 +233,45 @@
     'Count': '数量',
     'Revenue': '营收',
 
-    'Create Ticket': '创建工单',
-    'All': '全部',
-    'Ongoing': '进行中',
-    'Open': '待处理',
-    'Closed': '已关闭',
-    'Solved': '已解决',
-    'On Hold': '挂起',
-    'No tickets found': '未找到工单'
+    // ==================== 6. 长句与复杂文案 ====================
+    // 提示文案（分段）
+    'If you have more products to add at once, please contact our': '如果你有更多商品需要一次性添加，请联系',
+    'Suppliers Team': '供应商团队',
+
+    // 底部文案
+    'By creating this offer you agree to': '创建该报价即表示你同意',
+    'Add and create another offer': '添加并创建另一个报价',
+    'Add my Offer': '添加我的报价',
+
+    // 长句
+    'This is the exact amount that will be transferred to you after all platform fees have been deducted. (customer price minus platform fees and services). Note that if there are VAT rates applied on your account, this amount will change according to the VAT table in use:':
+      '这是在扣除所有平台费用后将实际转给你的金额（客户价格减去平台费用和服务费）。请注意，如果你的账户适用了增值税税率，该金额会根据当前使用的增值税表发生变化：',
+    'This amount represents your gross sales price to end customers before platform fees are deducted.':
+      '该金额表示在扣除平台费用之前，你面向终端客户的含税销售价格。',
+    'Note that if there are VAT rates applied on your account, this sales price will change according to the VAT table in use:':
+      '请注意，如果你的账户适用了增值税税率，该销售价格会根据当前使用的增值税表发生变化：',
+    'The sales price for the end customers also depends on additional services that the customer may choose during the purchase.':
+      '终端客户的销售价格也会受到客户在购买时选择的附加服务影响。',
+    'A complete list of gross sales prices can be found in the monthly sales report.':
+      '完整的含税销售价格列表可在每月销售报表中查看。',
+    'Set your Minimum Price (Customer price) for which you are willing to sell the key.':
+      '设置你愿意出售该 Key 的最低价格（客户价）。',
+    "Turn on the 'Decreasing Price Automatically' to keep your offer on the 1 position as long as possible.":
+      '开启"自动降价"可让你的报价尽可能长时间保持在第1位。',
+    "Turn on the 'Decreasing Price Automatically' to keep your offer on the 1 position for as long as possible.":
+      '开启"自动降价"可让你的报价尽可能长时间保持在第1位。',
+    "Turn on the 'Allow manual pricing' to have our Team track and adjust the price dynamically to maximize your sales, revenue and profit based on other markets.":
+      '开启"允许人工定价"后，我们的团队将根据其他市场动态跟踪并调整价格，以最大化你的销量、营收和利润。',
+    'This option allows us to manually adjust the price of your offer, above the set Minimal Price.':
+      '此选项允许我们在你设定的最低价格之上，手动调整你的报价价格。',
+    'Our Team will raise or lower the price to optimize your revenue and profit based on the market conditions.':
+      '我们的团队会根据市场情况上调或下调价格，以优化你的营收和利润。',
+    'Especially important for new releases and bestsellers.':
+      '这对新品和畅销商品尤为重要。',
+    'If you want to add new keys into your stock, please go to': '如果你想向库存添加新的密钥，请前往',
+    'Preferable key format: Login: XXXX  Password: XXXXX, Email Login: XXXX Email Password: XXXX, Domain: XXXX':
+    '建议密钥格式：登录账号：XXXX  登录密码：XXXXX，邮箱账号：XXXX 邮箱密码：XXXX，域名：XXXX',
+    'minimalPrice - This value should be less than or equal to': '最低价格 - 该值应小于或等于'
   };
 
   const embeddedUserDict = {
