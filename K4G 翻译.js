@@ -23,7 +23,7 @@
   );
 
   function saveSettings() {
-    GM_setValue(SETTINGS_KEY, settings);
+    GM_setValue(SETTINGS_KEY, 设置);
   }
 
   const defaultDict = {
