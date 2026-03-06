@@ -1,16 +1,6 @@
 # Shadow Scripts
 
-<p>
-<a href="https://github.com/shadowxhero/shadow">GitHub</a>
-<span>｜</span>
-<a href="https://greasyfork.org/zh-CN/users/your-user-id">GreasyFork</a>
-<span>｜</span>
-<a href="https://addons.mozilla.org/en-US/firefox/addon/">FirefoxAddOns</a>
-<span>｜</span>
-<a href="https://chromewebstore.google.com/detail/">ChromeWebStore</a>
-</p>
 
-`GreaseMonkey`油猴脚本集合，如果觉得不错，点个`star`吧 😁  
 
 ## Install
 
