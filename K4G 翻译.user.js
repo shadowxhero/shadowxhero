@@ -1,7 +1,7 @@
 // ==UserScript==
-// @name         K4G 本地词典翻译 v3.3.3
+// @name         K4G 本地词典翻译
 // @namespace    k4g-local-cn
-// @version      3.3.3
+// @version      3.3.6
 // @description  本地词典翻译；长词优先；英文大小写不敏感可开关；跳过商品标题/图片区；支持导入导出；支持动态“xx Keys/Amount: xx Keys”；补充Key/Keys复数短语；修复状态标签中文被截断；已内置用户词典；修复弹窗h1不翻译；修复分段中文空格；右下角仅在有替换时显示；修复CI下KEY/Key冲突；去重精简词典；新增通知弹窗动态翻译
 // @match        https://k4g.com/*
 // @match        https://www.k4g.com/*
@@ -85,7 +85,7 @@
     // 报价状态
     'Active': '启用中',
     'Denied': '已拒绝',
-    'Sold': '已售',
+    'Sold': '已售完',
     'Active to': '有效期至',
     'Days left': '剩余天数',
     'Position': '排名',
@@ -433,6 +433,11 @@
     'Replacement': '补发',
     'Send message': '发送消息',
     'Write your message': '请输入消息',
+    'Price': '价格',
+    'Profit': '利润',
+    'Sold Out at': '售完时间',
+    'duration - This value should not be null.': '时长 - 该值不能为空。',
+    'You have no offers yet': '你还没有任何报价',
     'FROM:': '来自：'
   };
 
