@@ -19,7 +19,7 @@
 <tr>
 <td>K4G 本地词典翻译</td>
 <td>
-<a href="https://gist.github.com/shadowxhero/6d24dd67034911f47a94cc85d963fe63/raw/K4G%2520%25E7%25BF%25BB%25E8%25AF%2591.user.js">安装</a>
+<a href="https://github.com/shadowxhero/shadowxhero/raw/refs/heads/main/K4G%20%E7%BF%BB%E8%AF%91.user.js">安装</a>
 </td>
 <td>为 K4G 网站提供全面的本地化翻译，支持动态内容翻译和用户自定义词典。</td>
 </tr>
