@@ -562,7 +562,7 @@
       }
     }
 
-    rules。sort((a, b) => b.re.source.length - a.re.source.length);
+    rules.sort((a, b) => b.re.source.length - a.re.source.length);
     return rules;
   }
 
