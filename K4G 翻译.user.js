@@ -448,6 +448,7 @@
     'Log in to your account': '登录您的账户',
     'Remember me': '记住我',
     'Back to Homepage': '返回首页',
+    'Log In': '登录',
     'FROM:': '来自：'
   };
 
@@ -561,7 +562,7 @@
       }
     }
 
-    rules.sort((a, b) => b.re.source.length - a.re.source.length);
+    rules。sort((a, b) => b.re.source.length - a.re.source.length);
     return rules;
   }
 
