@@ -441,6 +441,7 @@
     'Reason': '原因',
     'Duplicated offer': '重复报价',
     'Expired': '过期时间',
+    'Create Account': '创建账户',
     'FROM:': '来自：'
   };
 
