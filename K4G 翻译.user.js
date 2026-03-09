@@ -10,7 +10,7 @@
 // @grant        GM_registerMenuCommand
 // @run-at       document-idle
 // ==/UserScript==
-// 111
+
 (function () {
   'use strict';
 
