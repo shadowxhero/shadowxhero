@@ -23,7 +23,7 @@
   );
 
   function saveSettings() {
-    GM_setValue(SETTINGS_KEY, 设置);
+    GM_setValue(SETTINGS_KEY, settings);
   }
 
   const defaultDict = {
@@ -271,7 +271,9 @@
     'If you want to add new keys into your stock, please go to': '如果你想向库存添加新的密钥，请前往',
     'Preferable key format: Login: XXXX  Password: XXXXX, Email Login: XXXX Email Password: XXXX, Domain: XXXX':
     '建议密钥格式：登录账号：XXXX  登录密码：XXXXX，邮箱账号：XXXX 邮箱密码：XXXX，域名：XXXX',
-    'minimalPrice - This value should be less than or equal to': '最低价格 - 该值应小于或等于'
+    'minimalPrice - This value should be less than or equal to': '最低价格 - 该值应小于或等于',
+    'Login from different location detected. Please, check your email address and enter verification code in below to log in.':
+    '检测到来自异地的登录。请检查您的邮箱，并在下方输入验证码以登录。',
   };
 
   const embeddedUserDict = {
@@ -449,6 +451,7 @@
     'Remember me': '记住我',
     'Back to Homepage': '返回首页',
     'Log In': '登录',
+    'Submit': '提交',
     'FROM:': '来自：'
   };
 
