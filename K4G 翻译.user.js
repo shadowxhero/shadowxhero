@@ -89,7 +89,7 @@
     'Active to': '有效期至',
     'Days left': '剩余天数',
     'Position': '排名',
-    'Title': '标题'，
+    'Title': '标题',
     
     // 报价筛选与导出
     'Show Filters': '显示筛选',
