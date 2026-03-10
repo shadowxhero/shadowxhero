@@ -895,7 +895,7 @@
     prompt('复制JSON', JSON.stringify(userDict, null, 2));
   });
 
-  GM_registerMenuCommand('📥 导入词典'， () => {
+  GM_registerMenuCommand('📥 导入词典', () => {
     const txt = prompt('粘贴JSON');
     if (!txt) return;
     try {
