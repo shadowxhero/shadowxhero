@@ -268,12 +268,15 @@
       '我们的团队会根据市场情况上调或下调价格，以优化你的营收和利润。',
     'Especially important for new releases and bestsellers.':
       '这对新品和畅销商品尤为重要。',
-    'If you want to add new keys into your stock, please go to': '如果你想向库存添加新的密钥，请前往',
+    'If you want to add new keys into your stock, please go to':
+      '如果你想向库存添加新的密钥，请前往',
     'Preferable key format: Login: XXXX  Password: XXXXX, Email Login: XXXX Email Password: XXXX, Domain: XXXX':
-    '建议密钥格式：登录账号：XXXX  登录密码：XXXXX，邮箱账号：XXXX 邮箱密码：XXXX，域名：XXXX',
+      '建议密钥格式：登录账号：XXXX  登录密码：XXXXX，邮箱账号：XXXX 邮箱密码：XXXX，域名：XXXX',
     'minimalPrice - This value should be less than or equal to': '最低价格 - 该值应小于或等于',
-    'Login from different location detected. Please, check your email address and enter verification code in below to log in.':
-    '检测到来自异地的登录。请检查您的邮箱，并在下方输入验证码以登录。',
+      'Login from different location detected. Please, check your email address and enter verification code in below to log in.':
+      '检测到来自异地的登录。请检查您的邮箱，并在下方输入验证码以登录。',
+    'Please, check your mobile 2FA application and enter the code below to log in.':
+      '请检查您手机上的双重身份验证 (2FA) 应用，并输入下方验证码进行登录。',
   };
 
   const embeddedUserDict = {
@@ -452,6 +455,10 @@
     'Back to Homepage': '返回首页',
     'Log In': '登录',
     'Submit': '提交',
+    'Are you sure you want to continue': '您确定要继续吗？',
+    'Download and remove': '下载并移除',
+    'Confirm': '确认',
+    'Cancel': '取消',
     'FROM:': '来自：'
   };
 
@@ -888,7 +895,7 @@
     prompt('复制JSON', JSON.stringify(userDict, null, 2));
   });
 
-  GM_registerMenuCommand('📥 导入词典', () => {
+  GM_registerMenuCommand('📥 导入词典'， () => {
     const txt = prompt('粘贴JSON');
     if (!txt) return;
     try {
