@@ -515,7 +515,7 @@
   ];
   const STOCK_CONTEXT_JOINED = STOCK_COUNTER_CONTEXT_SELECTORS.join(',');
 
-  const escapeRegExp = s => s.替换(/[.*+?^${}()|[\]\\]/g, '\\$&');
+  const escapeRegExp = s => s.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
   const isAsciiWordLike = s => /^[A-Za-z0-9 ]+$/.test(s);
 
   function inSkipArea(el) {
