@@ -2,7 +2,7 @@
 // @name         K4G汉化
 // @namespace    k4g-local-cn
 // @version      3.5.1
-// @description  K4G网站本翻译脚本，支持词典管理、动态翻译、导入导出等功能
+// @description  K4G网站汉化翻译脚本，支持词典管理、动态翻译、导入导出等功能
 // @match        https://k4g.com/*
 // @match        https://www.k4g.com/*
 // @require      https://github.com/shadowxhero/shadowxhero/raw/refs/heads/main/K4G/K4G_Dict_External.js
