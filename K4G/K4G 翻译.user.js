@@ -1,8 +1,8 @@
 // ==UserScript==
-// @name         K4G 本地词典翻译
+// @name         K4G汉化
 // @namespace    k4g-local-cn
 // @version      3.5.1
-// @description  本地词典翻译；长词优先；英文大小写不敏感可开关；跳过商品标题/图片区；支持导入导出；支持动态“xx Keys/Amount: xx Keys”；补充Key/Keys复数短语；修复状态标签中文被截断；已内置用户词典；修复弹窗h1不翻译；修复分段中文空格；右下角仅在有替换时显示；修复CI下KEY/Key冲突；去重精简词典；新增通知弹窗动态翻译；接入外部词库
+// @description  K4G网站本翻译脚本，支持词典管理、动态翻译、导入导出等功能
 // @match        https://k4g.com/*
 // @match        https://www.k4g.com/*
 // @require      https://github.com/shadowxhero/shadowxhero/raw/refs/heads/main/K4G/K4G_Dict_External.js
