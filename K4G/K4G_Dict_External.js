@@ -1,8 +1,8 @@
 // ==UserScript==
-// @name         K4G 本地词典翻译 - 外部词库（非常用）
+// @name         K4G汉化 - 外部词库（非常用）
 // @namespace    k4g-local-cn-external
 // @version      1.0
-// @description  供 K4G 主翻译脚本调用的外部词典，用于存放长句和非常用提示
+// @description  供 K4G 主翻译脚本调用的外部词典，用于存放长句，非常用提示以及新增词条
 // @updateTime   2026/3/12 03:18:40
 // ==/UserScript==
 
