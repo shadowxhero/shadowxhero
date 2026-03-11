@@ -5,7 +5,7 @@
 // @description  K4G网站汉化翻译脚本，支持词典管理、动态翻译、导入导出等功能
 // @match        https://k4g.com/*
 // @match        https://www.k4g.com/*
-// @require      https://github.com/shadowxhero/shadowxhero/raw/refs/heads/main/K4G/K4G_CN.js
+// @require      https://raw.githubusercontent.com/shadowxhero/shadowxhero/refs/heads/main/K4G/K4G_CN.js
 // @grant        GM_getValue
 // @grant        GM_setValue
 // @grant        GM_registerMenuCommand
@@ -24,12 +24,14 @@
   );
 
   function saveSettings() {
-    GM_setValue(SETTINGS_KEY, 设置);
+    GM_setValue(SETTINGS_KEY, settings);
   }
 
   let userDict = GM_getValue(DICT_KEY, {});
   let externalDict = window.K4G_EXTERNAL_DICT || {};
-  let dict = { ...externalDict, ...userDict };
+  let defaultDict = {}; // 内置默认词典（当前为空）
+  let embeddedUserDict = {}; // 嵌入的用户词典（当前为空）
+  let dict = { ...defaultDict, ...embeddedUserDict, ...externalDict, ...userDict };
   let compiledRules = [];
 
   const SKIP_TAGS = new Set([
