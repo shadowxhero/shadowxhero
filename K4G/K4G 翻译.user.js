@@ -1,10 +1,11 @@
 // ==UserScript==
 // @name         K4G 本地词典翻译
 // @namespace    k4g-local-cn
-// @version      3.4.5
-// @description  本地词典翻译；长词优先；英文大小写不敏感可开关；跳过商品标题/图片区；支持导入导出；支持动态“xx Keys/Amount: xx Keys”；补充Key/Keys复数短语；修复状态标签中文被截断；已内置用户词典；修复弹窗h1不翻译；修复分段中文空格；右下角仅在有替换时显示；修复CI下KEY/Key冲突；去重精简词典；新增通知弹窗动态翻译
+// @version      3.5.0
+// @description  本地词典翻译；长词优先；英文大小写不敏感可开关；跳过商品标题/图片区；支持导入导出；支持动态“xx Keys/Amount: xx Keys”；补充Key/Keys复数短语；修复状态标签中文被截断；已内置用户词典；修复弹窗h1不翻译；修复分段中文空格；右下角仅在有替换时显示；修复CI下KEY/Key冲突；去重精简词典；新增通知弹窗动态翻译；接入外部词库
 // @match        https://k4g.com/*
 // @match        https://www.k4g.com/*
+// @require      file:///e:/Users/shadow/Downloads/K4G_Dict_External.js
 // @grant        GM_getValue
 // @grant        GM_setValue
 // @grant        GM_registerMenuCommand
@@ -69,7 +70,24 @@
     // 商家相关
     'Merchant': '商家',
     'MY OFFERS': '我的报价',
-    
+    'Inactive': '未激活',
+    'Active': '已上架',
+    'Reactivate': '重新激活',
+    'Archived': '已归档',
+    'Archive': '归档',
+    'Duplicated offer': '重复报价',
+    'Expired': '过期时间',
+    'Sold Out at': '售完时间',
+    'Reason': '原因',
+
+    // 报价相关常用
+    'Offer ID': '报价ID',
+    'Qty': '数量',
+    'Price': '价格',
+    'Profit': '利润',
+    'Selected keys': '已选密钥',
+    'Available for sale:': '可售数量：',
+
     // 报价操作
     'Add offer': '新增报价',
     'Sold offers': '已售报价',
@@ -163,11 +181,22 @@
     // 客服相关
     'LiveChat availability': '在线客服可用性',
     'Dear Partner,': '尊敬的合作伙伴：',
-    'To establish a quick and direct communication with our Suppliers Team, please add us on Microsoft Teams at':
-      '为了与我们的供应商团队建立快速直接的沟通，请在 Microsoft Teams 添加我们：',
-    'Contact e-mail for wholesale inquiries:': '批发咨询邮箱：',
-    'Thank you for your continued partnership!': '感谢您一直以来的合作！',
+    'Complaint regarding sold product': '关于已售商品的投诉',
+    'Question regarding sold product': '关于已售商品的问题',
+    'Question general': '一般问题',
+    'Last reply': '最后回复',
+    'Ticket ID': '工单编号',
+    'Awaiting': '待处理',
     
+    // 工单操作
+    'View all': '查看全部',
+    'Select template': '选择模板',
+    'Refund_approved': '退款已批准',
+    'Replacement': '补发',
+    'Send message': '发送消息',
+    'Write your message': '请输入消息',
+    'FROM:': '来自：',
+
     // 工单管理
     'Create Ticket': '创建工单',
     'All': '全部',
@@ -183,31 +212,13 @@
     'Sales insights': '销售洞察',
     'Additional Services': '附加服务',
     'Recommended Offer': '推荐报价',
-    'Level your offer to the Recommended ones, making it the most visible and sticky on the offer list.':
-      '将你的报价升级为推荐报价，使其在报价列表中更显眼并置顶展示。',
-    'Only one Supplier can promote the particular offer per day': '每个商品每天仅允许 1 位供应商进行此推广。',
     'Buy now': '立即购买',
     'Promotion Details': '推广详情',
 
     'Search bar': '搜索栏',
-    'Add your offer to the search bar to enhance the visibility of your products':
-      '将你的报价加入搜索栏，提升商品曝光度。',
-    'Only two offers can be promoted during the day': '每天最多仅可推广 2 个报价。',
-
     'Highlighted Offer': '高亮报价',
-    'Focus attention on your offer by highlighting it with a brighter color.':
-      '通过更亮的颜色高亮你的报价，吸引更多关注。',
-    'Only two Suppliers can promote the particular offer per day':
-      '每个商品每天最多仅允许 2 位供应商进行此推广。',
-
     'Offer for you': '专属报价位',
-    'Put your offer at the top place and merge with buy button of the product page..':
-      '将你的报价置于顶部，并与商品页购买按钮联动展示。',
-    'Only for Software offers': '仅适用于软件类报价',
-
     'Quests': '任务',
-    'Want to earn more or boost your sales?': '想赚得更多或提升销量吗？',
-    'Check available Quests!': '查看可用任务！',
 
     'Things to do': '待办事项',
     'offers low on stock': '库存不足的报价',
@@ -233,124 +244,27 @@
     'Count': '数量',
     'Revenue': '营收',
 
-    // ==================== 6. 长句与复杂文案 ====================
-    // 提示文案（分段）
-    'If you have more products to add at once, please contact our': '如果你有更多商品需要一次性添加，请联系',
-    'Suppliers Team': '供应商团队',
-
-    // 底部文案
-    'By creating this offer you agree to': '创建该报价即表示你同意',
-    'Add and create another offer': '添加并创建另一个报价',
-    'Add my Offer': '添加我的报价',
-
-    // 长句
-    'This is the exact amount that will be transferred to you after all platform fees have been deducted. (customer price minus platform fees and services). Note that if there are VAT rates applied on your account, this amount will change according to the VAT table in use:':
-      '这是在扣除所有平台费用后将实际转给你的金额（客户价格减去平台费用和服务费）。请注意，如果你的账户适用了增值税税率，该金额会根据当前使用的增值税表发生变化：',
-    'This amount represents your gross sales price to end customers before platform fees are deducted.':
-      '该金额表示在扣除平台费用之前，你面向终端客户的含税销售价格。',
-    'Note that if there are VAT rates applied on your account, this sales price will change according to the VAT table in use:':
-      '请注意，如果你的账户适用了增值税税率，该销售价格会根据当前使用的增值税表发生变化：',
-    'The sales price for the end customers also depends on additional services that the customer may choose during the purchase.':
-      '终端客户的销售价格也会受到客户在购买时选择的附加服务影响。',
-    'A complete list of gross sales prices can be found in the monthly sales report.':
-      '完整的含税销售价格列表可在每月销售报表中查看。',
-    'Set your Minimum Price (Customer price) for which you are willing to sell the key.':
-      '设置你愿意出售该 Key 的最低价格（客户价）。',
-    "Turn on the 'Decreasing Price Automatically' to keep your offer on the 1 position as long as possible.":
-      '开启"自动降价"可让你的报价尽可能长时间保持在第1位。',
-    "Turn on the 'Decreasing Price Automatically' to keep your offer on the 1 position for as long as possible.":
-      '开启"自动降价"可让你的报价尽可能长时间保持在第1位。',
-    "Turn on the 'Allow manual pricing' to have our Team track and adjust the price dynamically to maximize your sales, revenue and profit based on other markets.":
-      '开启"允许人工定价"后，我们的团队将根据其他市场动态跟踪并调整价格，以最大化你的销量、营收和利润。',
-    'This option allows us to manually adjust the price of your offer, above the set Minimal Price.':
-      '此选项允许我们在你设定的最低价格之上，手动调整你的报价价格。',
-    'Our Team will raise or lower the price to optimize your revenue and profit based on the market conditions.':
-      '我们的团队会根据市场情况上调或下调价格，以优化你的营收和利润。',
-    'Especially important for new releases and bestsellers.':
-      '这对新品和畅销商品尤为重要。',
-    'If you want to add new keys into your stock, please go to':
-      '如果你想向库存添加新的密钥，请前往',
-    'Preferable key format: Login: XXXX  Password: XXXXX, Email Login: XXXX Email Password: XXXX, Domain: XXXX':
-      '建议密钥格式：登录账号：XXXX  登录密码：XXXXX，邮箱账号：XXXX 邮箱密码：XXXX，域名：XXXX',
-    'minimalPrice - This value should be less than or equal to': '最低价格 - 该值应小于或等于',
-      'Login from different location detected. Please, check your email address and enter verification code in below to log in.':
-      '检测到来自异地的登录。请检查您的邮箱，并在下方输入验证码以登录。',
-    'Please, check your mobile 2FA application and enter the code below to log in.':
-      '请检查您手机上的双重身份验证 (2FA) 应用，并输入下方验证码进行登录。',
-  };
-
-  const embeddedUserDict = {
-    'About us': '关于我们',
-    'Active': '已上架',
-    'Active from / to': '生效起止时间',
-    'Add date': '添加日期',
-    'Added at': '添加时间',
-    'Attract more Customers by promoting your offer and getting additional exposure!': '通过推广你的报价并获得额外曝光，吸引更多客户！',
-    'Available for sale:': '可售数量：',
-    'Awaiting': '待处理',
-    'Batch Id': '批次号',
-    'Blog': '博客',
-    'COPY': '复制',
-    'Clear': '清除',
-    'Contact us': '联系我们',
-    'Copied to clipboard': '已复制到剪贴板',
-    'Created date': '创建日期',
-    'Creation time': '创建时间',
-    'Custom': '自定义',
-    'Date': '日期',
-    'Disable': '禁用',
-    'Dispatched': '已发货',
-    'Do you want to additionally promote your offer': '你想额外推广你的报价吗',
-    "Don't wait": '别再等',
-    "Don't wait anymore!": '别再等了！',
-    'Download': '下载',
-    'Download and remove': '下载并移除',
-    'E-mail Address': '邮箱地址',
-    'Edit offer': '编辑报价',
-    'Filter': '筛选',
-    'Get Cheap AAA Game': '领取低价 3A 游戏',
-    'Get K4G news to your inbox': '将 K4G 最新资讯发送到你的邮箱',
-    'Get more sales': '获得更多销量',
-    'REGION': '区域',
-    'Received': '已收到',
-    'Remove': '移除',
-    'Reserved': '已预留',
-    'SALES': '销售',
-    'Save offer': '保存报价',
-    'Select all': '全选',
-    'Select all visible': '选择当前可见项',
-    'Selected keys': '已选密钥',
-    'Sold at': '售出时间',
-    'Sold date': '售出日期',
-    'Status': '状态',
-    'Submitted': '已提交',
-    'Subscribe': '订阅',
-    'Subscribe us': '订阅我们',
-    'Terms & Conditions': '条款与条件',
-    'Unchanged price since': '自以下时间起价格未变',
-    'VIP Terms & Conditions': 'VIP 条款与条件',
-    'Want to generate more sales?': '想获得更多销量吗？',
-    'Want to list?': '想上架商品？',
-    'You have no awaiting feedbacks': '你暂无待处理反馈',
-    'You have no orders yet': '你还没有订单',
-    'You have no products yet': '你还没有商品',
-    'You have no tickets yet': '你还没有工单',
-    'Your search phrase': '你的搜索词',
-    'Please check your spelling or': '请检查拼写或',
-    'anymore!': '了！',
-    'cannot be found': '未找到',
-    'price - This value should not be blank.': '价格 - 此值不能为空。',
-    'reset the filters.': '重置筛选条件。',
-    'reset the filters': '重置筛选条件',
-    'Yes': '是',
-    'No': '否',
-    // 交易记录筛选面板补充
+    // ==================== 6. 财务与交易 ====================
+    'You made a sale!': '你成交了一笔！',
+    'Operation': '交易',
+    'Operations for export (max. 5000)': '待导出交易记录（最多5000条）',
+    'Operation Type': '交易类型',
+    'Amount': '金额',
+    'Sale': '售出',
+    'Complete': '完成',
+    'Order ID': '订单ID',
+    'Scheduled at': '交易时间',
+    'Buyer Country': '买家国家/地区',
+    'Amount paid (Sales price)': '实付金额（销售价）',
+    'Service Fee': '服务费',
+    'KPP Fee': 'KPP费用',
+    'Extra Services Fee': '附加服务费',
+    'Discount Fee': '折扣费用',
     'Transaction amount': '交易金额',
     'Process date': '处理日期',
     'Schedule date': '计划日期',
     'Type': '类型',
     'Credit memo': '贷项通知单',
-    'Payout': '提现',
     'Payout fee': '提现手续费',
     'Manual K4G balance': '手动K4G余额调整',
     'Offer activation': '报价激活',
@@ -381,71 +295,50 @@
     'Expand all': '展开全部',
     'Show less': '收起',
     'Create date': '创建日期',
-    // 枚举兜底（先这样，后续知道真实含义再改）
-    'enum.transaction_type.33': '交易类型33',
-    'enum.transaction_type.34': '交易类型34',
-    'enum.transaction_type.35': '交易类型35',
-    'enum.transaction_type.36': '交易类型36',
 
-    // 你新提供并整合的词条
-    'Help': '帮助',
-    'How to activate keys': '如何激活密钥',
-    'How to buy': '如何购买',
-    'K4G Purchase Protection': 'K4G 购买保障',
-    'K4G Wholesale': 'K4G 批发',
-    'Like TOP deals?': '喜欢超值优惠吗？',
-    'Need extra money?': '需要额外收入吗？',
-    'Our mission': '我们的使命',
-    'Privacy Policy': '隐私政策',
-    'Product list': '商品列表',
-    'KYC verification completed successfully. Your account is verified.': 'KYC 验证已成功完成。你的账户已通过验证。',
-    'You made a sale!': '你成交了一笔！',
-    'Operation': '交易',
-    'Operations for export (max. 5000)': '待导出交易记录（最多5000条）',
-    'Operations History': '交易历史',
-    'Created at': '创建时间',
-    'Operation Type': '交易类型',
-    'Amount': '金额',
-    'Sale': '售出',
-    'Complete': '完成',
-    'Order ID': '订单ID',
-    'Offer ID': '报价ID',
-    'Scheduled at': '交易时间',
-    'Qty': '数量',
-    'Buyer Country': '买家国家/地区',
-    'Amount paid (Sales price)': '实付金额（销售价）',
-    "It's your sales price for customer.": '这是你面向客户的销售价格。',
-    'Service Fee': '服务费',
-    'KPP Fee': 'KPP费用',
-    'Extra Services Fee': '附加服务费',
-    'Discount Fee': '折扣费用',
-    'No offers found': '未找到报价',
-    'Inactive': '未激活',
-    'Reactivate': '重新激活',
-    'Archived': '已归档',
-    'Archive': '归档',
-    'Offer activated successfully.': '报价已成功激活。',
-    'Delete All Keys': '删除所有密钥',
-    'Delete Keys': '删除密钥',
-    'Offer saved successfully': '报价已成功保存',
-    'Complaint regarding sold product': '关于已售商品的投诉',
-    'Question regarding sold product': '关于已售商品的问题',
-    'Last reply': '最后回复',
-    'Ticket ID': '工单编号',
-    'View all': '查看全部',
-    'Select template': '选择模板',
-    'Refund_approved': '退款已批准',
-    'Replacement': '补发',
-    'Send message': '发送消息',
-    'Write your message': '请输入消息',
-    'Price': '价格',
-    'Profit': '利润',
-    'Sold Out at': '售完时间',
-    'duration - This value should not be null.': '时长 - 该值不能为空。',
-    'You have no offers yet': '你还没有任何报价',
-    'Reason': '原因',
-    'Duplicated offer': '重复报价',
-    'Expired': '过期时间',
+
+    // == 常用与零散词条 ==
+    'Suppliers Team': '供应商团队',
+    'Add and create another offer': '添加并创建另一个报价',
+    'Add my Offer': '添加我的报价',
+
+    // 常用属性与操作
+    'Add date': '添加日期',
+    'Added at': '添加时间',
+    'Batch Id': '批次号',
+    'COPY': '复制',
+    'Clear': '清除',
+    'Copied to clipboard': '已复制到剪贴板',
+    'Created date': '创建日期',
+    'Creation time': '创建时间',
+    'Custom': '自定义',
+    'Date': '日期',
+    'Disable': '禁用',
+    'Dispatched': '已发货',
+    'Download': '下载',
+    'E-mail Address': '邮箱地址',
+    'Edit offer': '编辑报价',
+    'Filter': '筛选',
+    'Get more sales': '获得更多销量',
+    'Received': '已收到',
+    'Remove': '移除',
+    'Reserved': '已预留',
+    'SALES': '销售',
+    'Save offer': '保存报价',
+    'Select all': '全选',
+    'Select all visible': '选择当前可见项',
+    'Sold at': '售出时间',
+    'Sold date': '售出日期',
+    'Status': '状态',
+    'Submitted': '已提交',
+    'Subscribe': '订阅',
+    'Subscribe us': '订阅我们',
+    'Unchanged price since': '自以下时间起价格未变',
+    'Your search phrase': '你的搜索词',
+    'Yes': '是',
+    'No': '否',
+    'Confirm': '确认',
+    'Cancel': '取消',
     'Create Account': '创建账户',
     'Connect via': '连接方式',
     'Not a member yet': '还不是会员',
@@ -455,21 +348,17 @@
     'Back to Homepage': '返回首页',
     'Log In': '登录',
     'Submit': '提交',
-    'Are you sure you want to continue': '您确定要继续吗？',
-    'Download and remove': '下载并移除',
-    'Confirm': '确认',
-    'Cancel': '取消',
-    'It seems that you\'ve been lost': '页面好像走丢了',
-    'Oooups, no such page has been found': '哎呀，找不到该页面',
-    'Not logged in or token expired.': '未登录或登录凭证已过期。',
     'Active from / to': '有效期限：从 / 至',
-    'Register': '注册',
-    'Question general': '一般问题',
-    'FROM:': '来自：'
+    'Register': '注册'
+  };
+
+  const embeddedUserDict = {
+    // 临时内置词典，建议新出的、尚未分类的词态先放这，之后再移入外部词库
   };
 
   let userDict = GM_getValue(DICT_KEY, {});
-  let dict = { ...defaultDict, ...embeddedUserDict, ...userDict };
+  let externalDict = window.K4G_EXTERNAL_DICT || {};
+  let dict = { ...defaultDict, ...embeddedUserDict, ...externalDict, ...userDict };
   let compiledRules = [];
 
   const SKIP_TAGS = new Set([
@@ -584,7 +473,8 @@
 
   function rebuildDictAndRules() {
     userDict = GM_getValue(DICT_KEY, {});
-    dict = { ...defaultDict, ...embeddedUserDict, ...userDict };
+    externalDict = window.K4G_EXTERNAL_DICT || {};
+    dict = { ...defaultDict, ...embeddedUserDict, ...externalDict, ...userDict };
     compiledRules = compileRulesFromDict(dict);
   }
 
@@ -920,7 +810,7 @@
   });
 
   GM_registerMenuCommand('🧩 导出“合并后词典”(用于写入defaultDict)', () => {
-    const merged = { ...defaultDict, ...embeddedUserDict, ...userDict };
+    const merged = { ...defaultDict, ...embeddedUserDict, ...externalDict, ...userDict };
     prompt('复制下面JSON：', JSON.stringify(merged, null, 2));
   });
 
@@ -929,7 +819,7 @@
     userDict = {};
     GM_setValue(DICT_KEY, userDict);
     refreshAfterDictChange();
-    alert('已清空本地用户词典，仅保留脚本内置 defaultDict + embeddedUserDict。');
+    alert('已清空本地用户词典，仅保留脚本内置及外部词典。');
   });
 
   GM_registerMenuCommand(`🔤 切换英文大小写不敏感（当前：${settings.caseInsensitiveEnglish ? '开' : '关'}）`, () => {
