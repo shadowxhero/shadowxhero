@@ -290,6 +290,7 @@ window.K4G_EXTERNAL_DICT = {
   // 常用属性与操作
   'Add date': '添加日期',
   'Added at': '添加时间',
+  'Created at': '创建时间',
   'Batch Id': '批次号',
   'Item batch': '商品批次',
   'COPY': '复制',
