@@ -255,6 +255,7 @@ window.K4G_EXTERNAL_DICT = {
   'Payout fee': '提现手续费',
   'Manual K4G balance': '手动K4G余额调整',
   'Offer activation': '报价激活',
+  'Offer activated successfully': '报价激活成功',
   'Offer reactivation external': '报价重新激活（外部）',
   'Price change': '价格变更',
   'Order refund': '订单退款',
