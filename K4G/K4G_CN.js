@@ -125,6 +125,7 @@ window.K4G_EXTERNAL_DICT = {
   
   // 库存管理
   'Stock Details': '库存详情',
+  'Faulty stock': '库存有缺陷',
   'Files .csv/.txt': '文件 .csv/.txt',
   'Manual': '手动',
   'Amount:': '数量：',
