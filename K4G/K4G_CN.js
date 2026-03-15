@@ -135,6 +135,7 @@ window.K4G_EXTERNAL_DICT = {
   'Stock': '库存',
   'Pending': '待处理',
   'No offers': '暂无报价',
+  'No offers found': '未找到报价',
   
   // 价格管理
   'Price Details': '价格详情',
