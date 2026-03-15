@@ -362,6 +362,7 @@ window.K4G_EXTERNAL_DICT = {
   'Login from different location detected. Please, check your email address and enter verification code in below to log in.': '检测到来自异地的登录。请检查您的邮箱，并在下方输入验证码以登录。',
   'Please, check your mobile 2FA application and enter the code below to log in.': '请检查您手机上的双重身份验证 (2FA) 应用，并输入下方验证码进行登录。',
   'Provided Two Factor Authentication code is invalid': '提供的双重身份验证代码无效',
+  'Two Factor Authentication is required': '需要双重身份验证',
   'Make sure each key is in separate line and contains at least 5 characters.': '请确保每个 Key 独立成行，且长度至少为 5 个字符。',
   'To establish a quick and direct communication with our Suppliers Team, please add us on Microsoft Teams at': '为了与我们的供应商团队建立快速直接的沟通，请在 Microsoft Teams 添加我们：',
   'Contact e-mail for wholesale inquiries:': '批发咨询邮箱：',
