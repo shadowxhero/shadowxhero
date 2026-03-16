@@ -115,6 +115,7 @@ window.K4G_EXTERNAL_DICT = {
   'No key found': '未找到密钥',
   'ACCOUNT': '账号',
   'LANGUAGES': '语言',
+  'Language': '语言',
   'Platform': '平台',
   'Region': '地区',
   'Delivery type': '交付类型',
@@ -160,6 +161,7 @@ window.K4G_EXTERNAL_DICT = {
   // ==================== 3. 账户与设置 ====================
   'Fragments': '碎片',
   'Rewards': '奖励',
+  'Currency': '货币',
 
   // ==================== 4. 客服与支持 ====================
   // 客服相关
@@ -399,6 +401,10 @@ window.K4G_EXTERNAL_DICT = {
   'Please check your spelling or': '请检查拼写或',
   'cannot be found': '未找到',
   'reset the filters.': '重置筛选条件。',
+  'Something went wrong. Try again later': '出错了，请稍后重试。',
+  "It seems that you're in": '您似乎位于',
+  'Do you want to apply suggested settings': '是否应用建议的设置？',
+  'Yes, apply settings': '是，应用设置',
 
   // ==================== 9. 不常用指南与底部链接 ====================
   'Help': '帮助',
