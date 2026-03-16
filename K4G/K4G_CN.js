@@ -415,6 +415,7 @@ window.K4G_EXTERNAL_DICT = {
   'Like TOP deals?': '喜欢超值优惠吗？',
   'Need extra money?': '需要额外收入吗？',
   'Our mission': '我们的使命',
+  'Browse some of our best deals': '浏览精选特惠',
   'Privacy Policy': '隐私政策',
   'Product list': '商品列表',
   'About us': '关于我们',
