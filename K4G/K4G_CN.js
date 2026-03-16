@@ -110,6 +110,7 @@ window.K4G_EXTERNAL_DICT = {
   'KEY': '密钥类型',
   'Key': '密钥',
   'Keys': '密钥',
+  'Keys not provided for activating order': '未提供激活报价所需的密钥',
   'No keys found': '未找到密钥',
   'No key found': '未找到密钥',
   'ACCOUNT': '账号',
