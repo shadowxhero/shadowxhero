@@ -1,9 +1,9 @@
 // ==UserScript==
 // @name         K4G汉化 - 完整词典
 // @namespace    k4g-cn-external-dict
-// @version      2.1
+// @version      2.2
 // @description  K4G汉化脚本的完整词典，包含所有翻译词条
-// @updateTime   2026/3/18 18:39:12
+// @updateTime   2026/3/18 20:24:58
 //
 // 版本更新规范：
 // - 每次新增/修改词条后，必须同步更新本文件头部的 @version 与 @updateTime。
@@ -176,6 +176,8 @@ window.K4G_EXTERNAL_DICT = {
   'Dear Partner,': '尊敬的合作伙伴：',
   'Thank you for your brief reply': '感谢您的简短回复',
   'As per your request, we will refund the Buyer': '应您的请求，我们将向买家退款',
+  'As per your request, we will forward the information to the Buyer. Once we receive any update from him, we will immediately let you know.': '应您的请求，我们会将信息转达给买家。一旦收到他的任何更新，我们会立即通知您。',
+  'As per your request, we will forward the replacement key to the Buyer': '应您的请求，我们会将补发密钥转交给买家。',
   'Kind regards': '此致敬礼',
   'Complaint regarding sold product': '关于已售商品的投诉',
   'Question regarding sold product': '关于已售商品的问题',
