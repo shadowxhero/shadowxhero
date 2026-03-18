@@ -1,16 +1,18 @@
 // ==UserScript==
 // @name         K4G汉化 - 完整词典
 // @namespace    k4g-cn-external-dict
-// @version      2.0
+// @version      2.1
 // @description  K4G汉化脚本的完整词典，包含所有翻译词条
-// @updateTime   2026/3/12 03:18:40
+// @updateTime   2026/3/18 18:39:12
+//
+// 版本更新规范：
+// - 每次新增/修改词条后，必须同步更新本文件头部的 @version 与 @updateTime。
+// - @version：按小版本递增（例如 2.0 → 2.1 → 2.2）。
+// - @updateTime：使用当前时间（格式：YYYY/M/D HH:mm:ss）。
+// - 同时更新主脚本版本号（K4G 汉化.user.js 的 @version），以便 浏览器扩展 检测更新。
 // ==/UserScript==
 
 window.K4G_EXTERNAL_DICT = {
-  // ==================== 元数据 ====================
-  // 更新时间: 2026/3/11 21:02:00
-  // 版本: 2.0
-  // 描述: K4G汉化脚本的完整词典，包含所有翻译词条
   
   // ==================== 1. 导航与界面 ====================
   // 通用导航
@@ -146,10 +148,13 @@ window.K4G_EXTERNAL_DICT = {
   'Lowest price': '最低价格',
   'Highest price': '最高价格',
   'Dynamic pricing': '动态定价',
+  'Default dynamic pricing': '默认动态定价',
+  'Apply dynamic pricing': '应用动态定价',
   'Allow manual pricing': '允许人工调价',
   'My minimum price': '我的最低价格',
   'Apply global dynamic pricing': '应用全局动态定价',
   'Apply dynamic pricing for offers:': '应用动态定价到报价：',
+  'The percentage entered here will be applied only to your new offers with Dynamic Pricing enabled during the offer creation. This serves as your allowable selling price range. We cannot lower the price beyond the percentage you specify, but we can raise it to increase your profit': '此处输入的百分比仅会在创建报价时应用到开启“动态定价”的新报价，用于限定你的可售价格区间。我们不会把价格降到你指定百分比之外，但可以上调以提高你的利润。',
   
   // 报价详情
   'Offer Details': '报价详情',
