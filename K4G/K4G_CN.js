@@ -74,7 +74,7 @@ window.K4G_EXTERNAL_DICT = {
 
   // 报价操作
   'Add offer': '新增报价',
-  'Sold offers': '已售报价',
+  'Sold offers': '已售完报价',
   'Edit': '编辑',
   'Edit Offer': '编辑报价',
   'Promote offer': '推广报价',
@@ -86,6 +86,7 @@ window.K4G_EXTERNAL_DICT = {
   
   // 报价状态
   'Denied': '已拒绝',
+  'Offer Denied': '报价已拒绝',
   'Sold': '已售完',
   'Active to': '有效期至',
   'Days left': '剩余天数',
@@ -166,7 +167,11 @@ window.K4G_EXTERNAL_DICT = {
   // ==================== 4. 客服与支持 ====================
   // 客服相关
   'LiveChat availability': '在线客服可用性',
+  'Dear Supplier': '尊敬的供应商',
   'Dear Partner,': '尊敬的合作伙伴：',
+  'Thank you for your brief reply': '感谢您的简短回复',
+  'As per your request, we will refund the Buyer': '应您的请求，我们将向买家退款',
+  'Kind regards': '此致敬礼',
   'Complaint regarding sold product': '关于已售商品的投诉',
   'Question regarding sold product': '关于已售商品的问题',
   'Question general': '一般问题',
@@ -393,6 +398,7 @@ window.K4G_EXTERNAL_DICT = {
   "It seems that you've been lost": '页面好像走丢了',
   'Oooups, no such page has been found': '哎呀，找不到该页面',
   'Not logged in or token expired.': '未登录或登录凭证已过期。',
+  'This account is inactive. Contact customer service for more information.': '该账户未激活。请联系客服了解更多信息。',
   'You have no awaiting feedbacks': '你暂无待处理反馈',
   'You have no orders yet': '你还没有订单',
   'You have no products yet': '你还没有商品',
