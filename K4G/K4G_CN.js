@@ -1,9 +1,9 @@
 // ==UserScript==
 // @name         K4G汉化 - 完整词典
 // @namespace    k4g-cn-external-dict
-// @version      2.3
+// @version      2.4
 // @description  K4G汉化脚本的完整词典，包含所有翻译词条
-// @updateTime   2026/3/19 19:57:15
+// @updateTime   2026/3/19 20:08:24
 //
 // 版本更新规范：
 // - 每次新增/修改词条后，必须同步更新本文件头部的 @version 与 @updateTime。
@@ -271,6 +271,7 @@ window.K4G_EXTERNAL_DICT = {
   'Offer activation': '报价激活',
   'Offer activated successfully': '报价激活成功',
   'Offer saved successfully': '报价保存成功',
+  'Offer archived successfully': '报价归档成功',
   'Offer reactivation external': '报价重新激活（外部）',
   'Price change': '价格变更',
   'Order refund': '订单退款',
@@ -328,6 +329,7 @@ window.K4G_EXTERNAL_DICT = {
   'Delete All Keys': '删除全部密钥',
   'Received': '已收到',
   'Remove': '移除',
+  'The key was removed correctly': '该密钥已成功移除',
   'Reserved': '已预留',
   'SALES': '销售',
   'Save offer': '保存报价',
