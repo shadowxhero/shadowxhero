@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         K4G汉化
 // @namespace    k4g-local-cn
-// @version      3.5.3
+// @version      3.5.5
 // @description  K4G网站汉化翻译脚本，支持词典管理、动态翻译、导入导出等功能
 // @match        https://k4g.com/*
 // @match        https://www.k4g.com/*
@@ -155,8 +155,8 @@
     if (document.getElementById('k4g-cn-style-fix-status')) return;
 
     const css = `
-      [data-testid="TABLE_ROW_TEST_ID"] .Label_label__BvA9S,
-      [class*="ResultRow_"] .Label_label__BvA9S {
+      [data-testid="TABLE_ROW_TEST_ID"] [class*="Label_label__"],
+      [class*="ResultRow_"] [class*="Label_label__"] {
         display: inline-flex !important;
         align-items: center !important;
         white-space: nowrap !important;
@@ -167,20 +167,20 @@
         width: auto !important;
       }
 
-      [data-testid="TABLE_ROW_TEST_ID"] .Table_tableRowItem__d7v3y.column-1,
-      [data-testid="TABLE_ROW_TEST_ID"] .Table_tableRowItem__d7v3y.column-2,
-      [data-testid="TABLE_ROW_TEST_ID"] .Table_tableRowItem__d7v3y.column-3 {
+      [data-testid="TABLE_ROW_TEST_ID"] [class*="Table_tableRowItem__"].column-1,
+      [data-testid="TABLE_ROW_TEST_ID"] [class*="Table_tableRowItem__"].column-2,
+      [data-testid="TABLE_ROW_TEST_ID"] [class*="Table_tableRowItem__"].column-3 {
         overflow: visible !important;
         min-width: 110px !important;
       }
 
-      [data-testid="TABLE_ROW_TEST_ID"] .Label_label__BvA9S .Label_iconWrapper__BxbbR,
-      [class*="ResultRow_"] .Label_label__BvA9S .Label_iconWrapper__BxbbR {
+      [data-testid="TABLE_ROW_TEST_ID"] [class*="Label_label__"] [class*="Label_iconWrapper__"],
+      [class*="ResultRow_"] [class*="Label_label__"] [class*="Label_iconWrapper__"] {
         flex: 0 0 auto !important;
       }
 
-      [data-testid="TABLE_ROW_TEST_ID"] .Label_label__BvA9S > *:not(.Label_iconWrapper__BxbbR),
-      [class*="ResultRow_"] .Label_label__BvA9S > *:not(.Label_iconWrapper__BxbbR) {
+      [data-testid="TABLE_ROW_TEST_ID"] [class*="Label_label__"] > *:not([class*="Label_iconWrapper__"]),
+      [class*="ResultRow_"] [class*="Label_label__"] > *:not([class*="Label_iconWrapper__"]) {
         flex-shrink: 0 !important;
       }
     `;

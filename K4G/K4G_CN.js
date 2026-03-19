@@ -1,9 +1,9 @@
 // ==UserScript==
 // @name         K4G汉化 - 完整词典
 // @namespace    k4g-cn-external-dict
-// @version      2.2
+// @version      2.3
 // @description  K4G汉化脚本的完整词典，包含所有翻译词条
-// @updateTime   2026/3/18 20:24:58
+// @updateTime   2026/3/19 19:57:15
 //
 // 版本更新规范：
 // - 每次新增/修改词条后，必须同步更新本文件头部的 @version 与 @updateTime。
@@ -325,6 +325,7 @@ window.K4G_EXTERNAL_DICT = {
   'Edit offer': '编辑报价',
   'Filter': '筛选',
   'Get more sales': '获得更多销量',
+  'Delete All Keys': '删除全部密钥',
   'Received': '已收到',
   'Remove': '移除',
   'Reserved': '已预留',
@@ -400,6 +401,7 @@ window.K4G_EXTERNAL_DICT = {
   // ==================== 8. 边缘提示文案与状态兜底 ====================
   "It's your sales price for customer.": '这是你面向客户的销售价格。',
   'price - This value should not be blank.': '价格 - 此值不能为空。',
+  'Please enter the price in the correct format, for example 15.50.': '请输入正确格式的价格，例如 15.50。',
   'duration - This value should not be null.': '时长 - 该值不能为空。',
   'Are you sure you want to continue': '您确定要继续吗？',
   "It seems that you've been lost": '页面好像走丢了',
