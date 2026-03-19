@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         K4G汉化 - 完整词典
 // @namespace    k4g-cn-external-dict
-// @version      2.4
+// @version      2.5
 // @description  K4G汉化脚本的完整词典，包含所有翻译词条
 // @updateTime   2026/3/19 20:08:24
 //
@@ -327,6 +327,7 @@ window.K4G_EXTERNAL_DICT = {
   'Filter': '筛选',
   'Get more sales': '获得更多销量',
   'Delete All Keys': '删除全部密钥',
+  'Delete Keys': '删除密钥',
   'Received': '已收到',
   'Remove': '移除',
   'The key was removed correctly': '该密钥已成功移除',
