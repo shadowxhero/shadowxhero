@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         K4G汉化
 // @namespace    k4g-local-cn
-// @version      3.5.7
+// @version      3.5.9
 // @description  K4G网站汉化翻译脚本，支持词典管理、动态翻译、导入导出等功能
 // @match        https://k4g.com/*
 // @match        https://www.k4g.com/*

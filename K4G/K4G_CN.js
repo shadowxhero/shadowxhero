@@ -1,9 +1,9 @@
 // ==UserScript==
 // @name         K4G汉化 - 完整词典
 // @namespace    k4g-cn-external-dict
-// @version      2.5
+// @version      2.7
 // @description  K4G汉化脚本的完整词典，包含所有翻译词条
-// @updateTime   2026/3/19 20:08:24
+// @updateTime   2026/3/21 21:55:00
 //
 // 版本更新规范：
 // - 每次新增/修改词条后，必须同步更新本文件头部的 @version 与 @updateTime。
@@ -62,6 +62,7 @@ window.K4G_EXTERNAL_DICT = {
   'Archived': '已归档',
   'Archive': '归档',
   'Duplicated offer': '重复报价',
+  'DuplicatedOffer': '重复报价',
   'Expired': '过期时间',
   'Sold Out at': '售完时间',
   'Reason': '原因',
@@ -178,6 +179,7 @@ window.K4G_EXTERNAL_DICT = {
   'As per your request, we will refund the Buyer': '应您的请求，我们将向买家退款',
   'As per your request, we will forward the information to the Buyer. Once we receive any update from him, we will immediately let you know.': '应您的请求，我们会将信息转达给买家。一旦收到他的任何更新，我们会立即通知您。',
   'As per your request, we will forward the replacement key to the Buyer': '应您的请求，我们会将补发密钥转交给买家。',
+  'Your response was sent. We’ll refresh the view when new messages appear': '您的回复已发送。有新消息时我们将刷新视图。',
   'Kind regards': '此致敬礼',
   'Complaint regarding sold product': '关于已售商品的投诉',
   'Question regarding sold product': '关于已售商品的问题',
@@ -409,6 +411,7 @@ window.K4G_EXTERNAL_DICT = {
   'Are you sure you want to continue': '您确定要继续吗？',
   "It seems that you've been lost": '页面好像走丢了',
   'Oooups, no such page has been found': '哎呀，找不到该页面',
+  'Oooops, no such page has been found': '哎呀，找不到该页面',
   'Not logged in or token expired.': '未登录或登录凭证已过期。',
   'This account is inactive. Contact customer service for more information.': '该账户未激活。请联系客服了解更多信息。',
   'You have no awaiting feedbacks': '你暂无待处理反馈',
