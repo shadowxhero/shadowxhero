@@ -1,9 +1,9 @@
 // ==UserScript==
 // @name         K4G汉化 - 完整词典
 // @namespace    k4g-cn-external-dict
-// @version      2.7
+// @version      2.8
 // @description  K4G汉化脚本的完整词典，包含所有翻译词条
-// @updateTime   2026/3/21 21:55:00
+// @updateTime   2026/3/23 04:04:00
 //
 // 版本更新规范：
 // - 每次新增/修改词条后，必须同步更新本文件头部的 @version 与 @updateTime。
@@ -175,7 +175,9 @@ window.K4G_EXTERNAL_DICT = {
   'LiveChat availability': '在线客服可用性',
   'Dear Supplier': '尊敬的供应商',
   'Dear Partner,': '尊敬的合作伙伴：',
+  'Thank you for your reply': '感谢您的回复',
   'Thank you for your brief reply': '感谢您的简短回复',
+  'Dear customer service team, your email account is now working normally. You can log in again to obtain the verification code and change your information.': '尊敬的客服团队，您的邮件账户现已正常工作。您可以重新登录以获取验证码并修改您的信息。',
   'As per your request, we will refund the Buyer': '应您的请求，我们将向买家退款',
   'As per your request, we will forward the information to the Buyer. Once we receive any update from him, we will immediately let you know.': '应您的请求，我们会将信息转达给买家。一旦收到他的任何更新，我们会立即通知您。',
   'As per your request, we will forward the replacement key to the Buyer': '应您的请求，我们会将补发密钥转交给买家。',
