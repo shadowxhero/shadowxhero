@@ -1,9 +1,9 @@
 // ==UserScript==
 // @name         K4G汉化 - 完整词典
 // @namespace    k4g-cn-external-dict
-// @version      2.8
+// @version      2.9
 // @description  K4G汉化脚本的完整词典，包含所有翻译词条
-// @updateTime   2026/3/23 04:04:00
+// @updateTime   2026/3/24 15:47:18
 //
 // 版本更新规范：
 // - 每次新增/修改词条后，必须同步更新本文件头部的 @version 与 @updateTime。
@@ -186,6 +186,7 @@ window.K4G_EXTERNAL_DICT = {
   'Complaint regarding sold product': '关于已售商品的投诉',
   'Question regarding sold product': '关于已售商品的问题',
   'Question general': '一般问题',
+  'General question': '一般问题',
   'Last reply': '最后回复',
   'Ticket ID': '工单编号',
   'Awaiting': '待处理',
