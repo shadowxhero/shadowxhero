@@ -46,6 +46,13 @@
     '[class*="ProductTitle"]',
     '[class*="product-title"]',
 
+    // 商品名悬浮完整名称（tooltip）不翻译，避免长标题被改写
+    '[role="tooltip"]',
+    '[class*="Tooltip_"]',
+    '[class*="tooltip_"]',
+    '[class*="Tooltip"]',
+    '[class*="tooltip"]',
+
     '[class*="PanelCard_titleNameContainer__"]',
     '[class*="PanelCard_title__"]',
     '[class*="PanelCard_name__"]',
