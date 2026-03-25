@@ -46,12 +46,7 @@
     '[class*="ProductTitle"]',
     '[class*="product-title"]',
 
-    // 商品名悬浮完整名称（tooltip）不翻译，避免长标题被改写
-    '[role="tooltip"]',
-    '[class*="Tooltip_"]',
-    '[class*="tooltip_"]',
-    '[class*="Tooltip"]',
-    '[class*="tooltip"]',
+    // 排除商品标题本体，但不再整体排除 tooltip，避免功能提示文案无法翻译
 
     '[class*="PanelCard_titleNameContainer__"]',
     '[class*="PanelCard_title__"]',
@@ -87,6 +82,22 @@
 
   const escapeRegExp = s => s.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
   const isAsciiWordLike = s => /^[A-Za-z0-9 ]+$/.test(s);
+
+  function isProductTitleTooltip(el) {
+    if (!el || !el.closest) return false;
+
+    const tooltip = el.closest('[role="tooltip"]');
+    if (!tooltip) return false;
+
+    const text = (tooltip.textContent || '').trim();
+    if (!text) return false;
+
+    // 商品名 tooltip 常见特征：包含平台/版本词，且通常不带句号的说明性长句
+    const looksLikeProductTitle = /\b(Steam|Xbox|PlayStation|PS4|PS5|Epic|Origin|EA App|Battle\.net|Ubisoft|Standard Edition|Ultimate Edition|Deluxe Edition|Complete Edition|Account|Altergift|Gift|Key|GLOBAL|Global)\b/i.test(text);
+    const looksLikeDescription = /[.!?]|\b(Turn on|Set your|This option|allows us|for which you are willing|maximize your sales|revenue|profit)\b/i.test(text);
+
+    return looksLikeProductTitle && !looksLikeDescription;
+  }
 
   function inSkipArea(el) {
     if (!el || !el.closest) return false;
@@ -324,6 +335,7 @@
     const el = node.parentElement;
     if (SKIP_TAGS.has(el.tagName)) return true;
     if (inSkipArea(el)) return true;
+    if (isProductTitleTooltip(el)) return true;
     if (el.isContentEditable) return true;
 
     const t = node.nodeValue;
@@ -354,6 +366,7 @@
 
     for (const el of elems) {
       if (inSkipArea(el)) continue;
+      if (isProductTitleTooltip(el)) continue;
       for (const attr of ['placeholder', 'title', 'aria-label']) {
         if (!el.hasAttribute(attr)) continue;
         const raw = el.getAttribute(attr);
