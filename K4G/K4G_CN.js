@@ -1,9 +1,9 @@
 // ==UserScript==
 // @name         K4G汉化 - 完整词典
 // @namespace    k4g-cn-external-dict
-// @version      2.9
+// @version      3.0
 // @description  K4G汉化脚本的完整词典，包含所有翻译词条
-// @updateTime   2026/3/24 15:47:18
+// @updateTime   2026/3/26 14:47:59
 //
 // 版本更新规范：
 // - 每次新增/修改词条后，必须同步更新本文件头部的 @version 与 @updateTime。
@@ -184,6 +184,8 @@ window.K4G_EXTERNAL_DICT = {
   'Your response was sent. We’ll refresh the view when new messages appear': '您的回复已发送。有新消息时我们将刷新视图。',
   'Kind regards': '此致敬礼',
   'Complaint regarding sold product': '关于已售商品的投诉',
+  'Complaint About Sold Product': '关于已售商品的投诉',
+  'Dear Support Team': '尊敬的支持团队',
   'Question regarding sold product': '关于已售商品的问题',
   'Question general': '一般问题',
   'General question': '一般问题',
