@@ -1,9 +1,9 @@
 // ==UserScript==
 // @name         K4G汉化 - 完整词典
 // @namespace    k4g-cn-external-dict
-// @version      3.1
+// @version      3.2
 // @description  K4G汉化脚本的完整词典，包含所有翻译词条
-// @updateTime   2026/3/27 15:00:45
+// @updateTime   2026/4/21 06:30:52
 //
 // 版本更新规范：
 // - 每次新增/修改词条后，必须同步更新本文件头部的 @version 与 @updateTime。
@@ -182,8 +182,14 @@ window.K4G_EXTERNAL_DICT = {
   'Kindly proceed with issuing a full refund to the customer': '请立即为顾客办理全额退款。',
   'As per your request, we will forward the information to the Buyer. Once we receive any update from him, we will immediately let you know.': '应您的请求，我们会将信息转达给买家。一旦收到他的任何更新，我们会立即通知您。',
   'As per your request, we will forward the replacement key to the Buyer': '应您的请求，我们会将补发密钥转交给买家。',
+  'K4G Weekly Products Newsletter': 'K4G 每周产品通讯',
+  'Below you’ll find a quick overview of upcoming product releases scheduled for this week': '以下是本周计划上线产品的简要概览。',
+  'Upcoming Releases This Week': '本周即将上线的产品',
+  'If you have any questions regarding these launches or need additional materials, feel free to reach out.': '如果您对这些上线安排有任何疑问，或需要更多资料，请随时联系。',
+  'More updates coming next week': '下周将带来更多更新',
   'Your response was sent. We’ll refresh the view when new messages appear': '您的回复已发送。有新消息时我们将刷新视图。',
   'Kind regards': '此致敬礼',
+  'Best regards': '此致问候',
   'Complaint regarding sold product': '关于已售商品的投诉',
   'Complaint About Sold Product': '关于已售商品的投诉',
   'Dear Support Team': '尊敬的支持团队',
@@ -355,6 +361,7 @@ window.K4G_EXTERNAL_DICT = {
   'Yes': '是',
   'No': '否',
   'Confirm': '确认',
+  'I acknowledge': '我已知晓',
   'Cancel': '取消',
   'Create Account': '创建账户',
   'Connect via': '连接方式',
