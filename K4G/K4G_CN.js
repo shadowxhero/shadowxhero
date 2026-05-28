@@ -1,9 +1,9 @@
 // ==UserScript==
 // @name         K4G汉化 - 完整词典
 // @namespace    k4g-cn-external-dict
-// @version      3.3
+// @version      3.4
 // @description  K4G汉化脚本的完整词典，包含所有翻译词条
-// @updateTime   2026/5/28 16:36:26
+// @updateTime   2026/5/28 17:48:53
 //
 // 版本更新规范：
 // - 每次新增/修改词条后，必须同步更新本文件头部的 @version 与 @updateTime。
@@ -38,6 +38,7 @@ window.K4G_EXTERNAL_DICT = {
   'New Offer': '新建报价',
   'Merchant Services': '商家服务',
   'Merchant News': '商家新闻',
+  'Supplier News': '供应商新闻',
   'Merchant Support': '商家支持',
   'My Balance': '我的余额',
   'Operations History': '操作记录',
@@ -291,6 +292,7 @@ window.K4G_EXTERNAL_DICT = {
   'Offer reactivation external': '报价重新激活（外部）',
   'Price change': '价格变更',
   'Order refund': '订单退款',
+  'Refund': '退款',
   'Order spent': '订单支出',
   'K4G commission': 'K4G佣金',
   'Dispute fee': '争议处理费',
@@ -307,7 +309,12 @@ window.K4G_EXTERNAL_DICT = {
   'Balance Expiration': '余额过期',
   'Exchange K4G balance': '兑换 K4G 余额',
   'Exchange K4G balance for a discount code': '将 K4G 余额兑换为折扣码',
+  'Your K4G Balance': '你的 K4G 余额',
+  'K4G balance': 'K4G 余额',
   'Available Balance': '可用余额',
+  'Pending balance': '待结算余额',
+  'Amount that remains pending. It will become Available Balance after the review period.': '仍处于待结算状态的金额。审核期结束后将转为可用余额。',
+  'Amount that can not be paid out. Can be used to pay for orders. Learn more.': '无法提现的金额，可用于支付订单。了解更多。',
   'Each voucher is valid for 60 days. It cannot be used to purchase K4G coins or gift cards, and the maximum cart value when using the voucher is €15.': '每张代金券有效期为 60 天。代金券不能用于购买 K4G 币或礼品卡，使用代金券时购物车最高金额为 €15。',
   'Refund in money after balance exchange is not available.': '余额兑换后不支持现金退款。',
   'Exchange for a discount code': '兑换折扣码',
@@ -343,6 +350,10 @@ window.K4G_EXTERNAL_DICT = {
   'Creation time': '创建时间',
   'Custom': '自定义',
   'Date': '日期',
+  'Start date': '开始日期',
+  'End date': '结束日期',
+  'Period': '周期',
+  'Month': '月份',
   'Disable': '禁用',
   'Dispatched': '已发货',
   'Download': '下载',
