@@ -1,9 +1,9 @@
 // ==UserScript==
 // @name         K4G汉化 - 完整词典
 // @namespace    k4g-cn-external-dict
-// @version      3.2
+// @version      3.3
 // @description  K4G汉化脚本的完整词典，包含所有翻译词条
-// @updateTime   2026/4/21 06:30:52
+// @updateTime   2026/5/28 16:36:26
 //
 // 版本更新规范：
 // - 每次新增/修改词条后，必须同步更新本文件头部的 @version 与 @updateTime。
@@ -41,7 +41,9 @@ window.K4G_EXTERNAL_DICT = {
   'Merchant Support': '商家支持',
   'My Balance': '我的余额',
   'Operations History': '操作记录',
+  'You have no operations yet': '你还没有交易记录',
   'Payouts': '提现',
+  'Payout': '提现',
   'Invoices': '发票',
   'Reports': '报表',
   'Account details': '账户详情',
@@ -303,6 +305,15 @@ window.K4G_EXTERNAL_DICT = {
   'K4G Coin': 'K4G币',
   'PayPal Account Fee': 'PayPal账户费用',
   'Balance Expiration': '余额过期',
+  'Exchange K4G balance': '兑换 K4G 余额',
+  'Exchange K4G balance for a discount code': '将 K4G 余额兑换为折扣码',
+  'Available Balance': '可用余额',
+  'Each voucher is valid for 60 days. It cannot be used to purchase K4G coins or gift cards, and the maximum cart value when using the voucher is €15.': '每张代金券有效期为 60 天。代金券不能用于购买 K4G 币或礼品卡，使用代金券时购物车最高金额为 €15。',
+  'Refund in money after balance exchange is not available.': '余额兑换后不支持现金退款。',
+  'Exchange for a discount code': '兑换折扣码',
+  'My Vouchers': '我的代金券',
+  'Vouchers': '代金券',
+  'You have no vouchers yet': '你还没有代金券',
   'Fragment Sale': '碎片售出',
   'Currency Conversion (out)': '货币转换（转出）',
   'Currency Conversion (in)': '货币转换（转入）',
