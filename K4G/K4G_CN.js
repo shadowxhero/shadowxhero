@@ -1,9 +1,9 @@
 // ==UserScript==
 // @name         K4G汉化 - 完整词典
 // @namespace    k4g-cn-external-dict
-// @version      3.4
+// @version      3.5
 // @description  K4G汉化脚本的完整词典，包含所有翻译词条
-// @updateTime   2026/5/28 17:48:53
+// @updateTime   2026/6/8 21:38:18
 //
 // 版本更新规范：
 // - 每次新增/修改词条后，必须同步更新本文件头部的 @version 与 @updateTime。
@@ -188,6 +188,8 @@ window.K4G_EXTERNAL_DICT = {
   'K4G Weekly Products Newsletter': 'K4G 每周产品通讯',
   'Below you’ll find a quick overview of upcoming product releases scheduled for this week': '以下是本周计划上线产品的简要概览。',
   'Upcoming Releases This Week': '本周即将上线的产品',
+  'The K4G Team': 'K4G 团队',
+  'Release date': '发售日期',
   'If you have any questions regarding these launches or need additional materials, feel free to reach out.': '如果您对这些上线安排有任何疑问，或需要更多资料，请随时联系。',
   'More updates coming next week': '下周将带来更多更新',
   'Your response was sent. We’ll refresh the view when new messages appear': '您的回复已发送。有新消息时我们将刷新视图。',
