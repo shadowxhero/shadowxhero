@@ -1,9 +1,9 @@
 // ==UserScript==
 // @name         K4G汉化 - 完整词典
 // @namespace    k4g-cn-external-dict
-// @version      3.6
+// @version      3.7
 // @description  K4G汉化脚本的完整词典，包含所有翻译词条
-// @updateTime   2026/7/1 14:24:09
+// @updateTime   2026/7/11 01:40:56
 //
 // 版本更新规范：
 // - 每次新增/修改词条后，必须同步更新本文件头部的 @version 与 @updateTime。
@@ -403,6 +403,7 @@ window.K4G_EXTERNAL_DICT = {
   'If you have more products to add at once, please contact our': '如果你有更多商品需要一次性添加，请联系',
   'By creating this offer you agree to': '创建该报价即表示你同意',
   'This is not a standard product. Read important notes (1) to make sure your offer has the same restrictions.': '这不是标准商品。请阅读重要说明（1），确保你的报价具有相同的限制条件。',
+  'This is not a standard product. Read important notes (2) to make sure your offer has the same restrictions.': '这不是标准商品。请阅读重要说明（2），确保你的报价具有相同的限制条件。',
   'This is the exact amount that will be transferred to you after all platform fees have been deducted. (customer price minus platform fees and services). Note that if there are VAT rates applied on your account, this amount will change according to the VAT table in use:': '这是在扣除所有平台费用后将实际转给你的金额（客户价格减去平台费用和服务费）。请注意，如果你的账户适用了增值税税率，该金额会根据当前使用的增值税表发生变化：',
   'This amount represents your gross sales price to end customers before platform fees are deducted.': '该金额表示在扣除平台费用之前，你面向终端客户的含税销售价格。',
   'Note that if there are VAT rates applied on your account, this sales price will change according to the VAT table in use:': '请注意，如果你的账户适用了增值税税率，该销售价格会根据当前使用的增值税表发生变化：',
