@@ -3,7 +3,7 @@
 // @namespace    k4g-cn-external-dict
 // @version      3.7
 // @description  K4G汉化脚本的完整词典，包含所有翻译词条
-// @updateTime   2026/7/11 01:40:56
+// @updateTime   2026/7/11 20:15:00
 //
 // 版本更新规范：
 // - 每次新增/修改词条后，必须同步更新本文件头部的 @version 与 @updateTime。
@@ -186,7 +186,8 @@ window.K4G_EXTERNAL_DICT = {
   'As per your request, we will forward the information to the Buyer. Once we receive any update from him, we will immediately let you know.': '应您的请求，我们会将信息转达给买家。一旦收到他的任何更新，我们会立即通知您。',
   'As per your request, we will forward the replacement key to the Buyer': '应您的请求，我们会将补发密钥转交给买家。',
   'K4G Weekly Products Newsletter': 'K4G 每周产品通讯',
-  'Below you’ll find a quick overview of upcoming product releases scheduled for this week': '以下是本周计划上线产品的简要概览。',
+  "Below you’ll find a quick overview of upcoming": ‘以下是即将上线产品的简要概览，’,
+  ‘product releases scheduled for this week’: ‘本周计划发布的产品如下。’,
   'Upcoming Releases This Week': '本周即将上线的产品',
   'The K4G Team': 'K4G 团队',
   'Release date': '发售日期',
