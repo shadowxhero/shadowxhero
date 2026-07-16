@@ -1,9 +1,9 @@
 ﻿// ==UserScript==
 // @name         K4G汉化 - 完整词典
 // @namespace    k4g-cn-external-dict
-// @version      3.8
+// @version      3.9
 // @description  K4G汉化脚本的完整词典，包含所有翻译词条
-// @updateTime   2026/7/16 15:47:53
+// @updateTime   2026/7/16 23:24:34
 // ==/UserScript==
 
 window.K4G_EXTERNAL_DICT = {
@@ -121,6 +121,7 @@ window.K4G_EXTERNAL_DICT = {
   'Region': '地区',
   'Delivery type': '交付类型',
   'Instant Delivery': '即时发货',
+  'Please note that the product may be delivered within 24 hours of the redeem time': '请注意，产品可能会在兑换后的 24 小时内交付',
   'Choose option': '选择选项',
   'Hide my offers': '隐藏我的报价',
   
