@@ -4,12 +4,6 @@
 // @version      3.8
 // @description  K4G汉化脚本的完整词典，包含所有翻译词条
 // @updateTime   2026/7/16 15:47:53
-//
-// 版本更新规范：
-// - 每次新增/修改词条后，必须同步更新本文件头部的 @version 与 @updateTime。
-// - @version：按小版本递增（例如 2.0 → 2.1 → 2.2）。
-// - @updateTime：使用当前时间（格式：YYYY/M/D HH:mm:ss）。
-// - 同时更新主脚本版本号（K4G 汉化.user.js 的 @version），以便 浏览器扩展 检测更新。
 // ==/UserScript==
 
 window.K4G_EXTERNAL_DICT = {
