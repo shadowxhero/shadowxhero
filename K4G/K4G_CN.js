@@ -1,9 +1,9 @@
 ﻿// ==UserScript==
 // @name         K4G汉化 - 完整词典
 // @namespace    k4g-cn-external-dict
-// @version      3.7
+// @version      3.8
 // @description  K4G汉化脚本的完整词典，包含所有翻译词条
-// @updateTime   2026/7/11 20:15:00
+// @updateTime   2026/7/16 15:47:53
 //
 // 版本更新规范：
 // - 每次新增/修改词条后，必须同步更新本文件头部的 @version 与 @updateTime。
@@ -405,6 +405,7 @@ window.K4G_EXTERNAL_DICT = {
   'By creating this offer you agree to': '创建该报价即表示你同意',
   'This is not a standard product. Read important notes (1) to make sure your offer has the same restrictions.': '这不是标准商品。请阅读重要说明（1），确保你的报价具有相同的限制条件。',
   'This is not a standard product. Read important notes (2) to make sure your offer has the same restrictions.': '这不是标准商品。请阅读重要说明（2），确保你的报价具有相同的限制条件。',
+  "Please note that this is AN ACCOUNT, NOT A CD KEY. You'll receive a username and password to access the account with the assigned product, as well as all the details needed to change the password and the email of this account. Keep in mind that changing the account region, currency or adding a different payment method may result in an automatic account lock due to platform term of service. Due to Steam Terms of Service, sharing the library or Steam Families may not work for all countries. Read more information": '请注意，这是一个账号，而非 CD 密钥。你将收到用于访问含指定产品账号的用户名和密码，以及更改该账号密码和电子邮箱所需的全部信息。请注意，更改账号地区、货币或添加其他付款方式可能会因平台服务条款而导致账号被自动锁定。根据 Steam 服务条款，共享游戏库或使用 Steam 家庭功能可能无法在所有国家/地区正常使用。阅读更多信息',
   'This is the exact amount that will be transferred to you after all platform fees have been deducted. (customer price minus platform fees and services). Note that if there are VAT rates applied on your account, this amount will change according to the VAT table in use:': '这是在扣除所有平台费用后将实际转给你的金额（客户价格减去平台费用和服务费）。请注意，如果你的账户适用了增值税税率，该金额会根据当前使用的增值税表发生变化：',
   'This amount represents your gross sales price to end customers before platform fees are deducted.': '该金额表示在扣除平台费用之前，你面向终端客户的含税销售价格。',
   'Note that if there are VAT rates applied on your account, this sales price will change according to the VAT table in use:': '请注意，如果你的账户适用了增值税税率，该销售价格会根据当前使用的增值税表发生变化：',
