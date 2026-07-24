@@ -25,6 +25,8 @@ assert.strictEqual(
   dict['We are contacting you regarding one of the items you sold as it appears that the Buyer has an issue with it. Please, see the details of the complaint below'],
   '我们就您售出的一件商品与您联系，因为买家似乎遇到了问题。请查看下方的投诉详情'
 );
+assert.strictEqual(dict['The customer received a refund'], '客户已收到退款');
+assert.strictEqual(dict['Could you please speed up delivery time'], '能否请您加快交付速度');
 
 assert.strictEqual(dict['Issue type'], '问题类型');
 assert.strictEqual(dict['Non delivery'], '未交付');
