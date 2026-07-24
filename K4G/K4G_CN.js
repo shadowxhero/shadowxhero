@@ -1,9 +1,9 @@
 ﻿// ==UserScript==
 // @name         K4G汉化 - 完整词典
 // @namespace    k4g-cn-external-dict
-// @version      4.0
+// @version      4.1
 // @description  K4G汉化脚本的完整词典，包含所有翻译词条
-// @updateTime   2026/7/24 18:22:06
+// @updateTime   2026/7/24 19:03:59
 // ==/UserScript==
 
 window.K4G_EXTERNAL_DICT = {
@@ -194,6 +194,8 @@ window.K4G_EXTERNAL_DICT = {
   'Complaint regarding sold product': '关于已售商品的投诉',
   'Complaint About Sold Product': '关于已售商品的投诉',
   'We are contacting you regarding one of the items you sold as it appears that the Buyer has an issue with it. Please, see the details of the complaint below': '我们就您售出的一件商品与您联系，因为买家似乎遇到了问题。请查看下方的投诉详情',
+  'The customer received a refund': '客户已收到退款',
+  'Could you please speed up delivery time': '能否请您加快交付速度',
   'Issue type': '问题类型',
   'Non delivery': '未交付',
   'In the attachments, we enclose screenshots showing the issue': '附件中包含展示该问题的截图',
