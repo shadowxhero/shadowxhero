@@ -24,19 +24,18 @@
 <td>为 K4G 网站提供全面的本地化翻译，支持动态内容翻译和用户自定义词典。</td>
 </tr>
 
-<!-- 未来可以在这里添加更多脚本 -->
-<!--
 <tr>
-<td>脚本名称2</td>
+<td>Gamivo 商品类型与ID</td>
 <td>
-<a href="安装链接">安装</a>
+<a href="https://raw.githubusercontent.com/shadowxhero/shadowxhero/main/Gamivo/Gamivo%20%E5%95%86%E5%93%81%E7%B1%BB%E5%9E%8B%E4%B8%8EID.user.js">安装</a>
 </td>
-<td>脚本2的简介描述。</td>
+<td>在 Gamivo 卖家报价表的商品名旁显示商品类型（Gift / Account）与商品 ID。</td>
 </tr>
--->
 
 </tbody>
 </table>
+
+> 上表中的脚本可单独安装使用。`K4G/K4G_CN.js` 是 K4G 汉化脚本的词典，由主脚本通过 `@require` 自动加载，无需也不应单独安装。
 
 ## Release
 
@@ -44,8 +43,8 @@
 
 ```bash
 # 克隆仓库
-$ git clone https://github.com/shadowxhero/shadow.git
-$ cd shadow
+$ git clone https://github.com/shadowxhero/shadowxhero.git
+$ cd shadowxhero
 
 # 直接编辑相应的 .js 文件进行修改
 ```
@@ -62,11 +61,11 @@ $ cd shadow
 
 ## 许可证
 
-本项目采用 MIT 许可证 - 查看 [LICENSE](LICENSE) 文件了解详情
+本项目采用 MIT 许可证。
 
 ## 贡献者
 
-感谢所有为本项目做出贡献的开发者！查看完整的贡献者列表，请访问 [GitHub贡献者页面](https://github.com/shadowxhero/shadow/graphs/contributors)。
+感谢所有为本项目做出贡献的开发者！查看完整的贡献者列表，请访问 [GitHub贡献者页面](https://github.com/shadowxhero/shadowxhero/graphs/contributors)。
 
 ---
 
