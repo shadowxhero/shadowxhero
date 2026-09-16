@@ -1,9 +1,10 @@
 // README 脚本列表校验
 //
 // 用途：确保 README 的「安装」表格与仓库中真实存在的脚本一一对应。
-// 新增脚本后若忘记更新 README（或链接写错），运行本测试会失败：
+// 新增脚本后若忘记更新 README（或链接写错），运行本测试会失败。
+// 在仓库根目录执行：
 //
-//   node readme-scripts.test.js
+//   node tests/readme-scripts.test.js
 //
 // 什么算「可安装脚本」：文件名以 .user.js 结尾，且头部含 @match。
 // 只有 UserScript 头、没有 @match 的文件属于依赖资源（例如 K4G/K4G_CN.js，
@@ -13,7 +14,8 @@ const assert = require('assert');
 const fs = require('fs');
 const path = require('path');
 
-const ROOT = __dirname;
+// 本文件位于 tests/ 下，仓库根是它的上一级
+const ROOT = path.join(__dirname, '..');
 const README = path.join(ROOT, 'README.md');
 
 // 安装链接的固定前缀：仓库 raw 地址的 main 分支
